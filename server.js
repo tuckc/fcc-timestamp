@@ -28,6 +28,6 @@ app.get('/*', (req, res) => {
   res.json(obj);
 });
 
-app.listen(8080, function () {
+app.listen(process.env.PORT || 5000, () => {
   console.log('Example app listening on port 8080!');
 });
